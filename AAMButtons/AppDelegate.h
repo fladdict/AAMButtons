@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  AAMButtons
 //
-//  Created by 深津 貴之 on 12/02/26.
-//  Copyright (c) 2012年 Art & Mobile. All rights reserved.
+//  Created by Takayuki Fukatsu on 12/02/25.
+//  Copyright (c) 2012年 artandmobile.com, fladdict.net All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
