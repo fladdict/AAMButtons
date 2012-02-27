@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class AAMSlideLock;
-@protocol AAMSlideLockDelegate
+@protocol AAMSlideLockDelegate <NSObject>
 @optional
 -(void)slideLockDidSlideBegin:(AAMSlideLock*)theSlideLock;
 -(void)slideLockDidSlideComplete:(AAMSlideLock*)theSlideLock;

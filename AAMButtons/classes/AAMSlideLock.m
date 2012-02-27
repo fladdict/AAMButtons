@@ -124,17 +124,17 @@
     #pragma clang diagnostic push
     #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     
-    if([((NSObject*)self.delegate) respondsToSelector:theSelector]){
-        [((NSObject*)self.delegate) performSelector:theSelector withObject:self];
+    if([self.delegate respondsToSelector:theSelector]){
+        [self.delegate performSelector:theSelector withObject:self];
     }
-    if([((NSObject*)self.thumbView) respondsToSelector:theSelector]){
-        [((NSObject*)self.thumbView) performSelector:theSelector withObject:self];
+    if([self.thumbView respondsToSelector:theSelector]){
+        [self.thumbView performSelector:theSelector withObject:self];
     }
-    if([((NSObject*)self.trackView) respondsToSelector:theSelector]){
-        [((NSObject*)self.trackView) performSelector:theSelector withObject:self];
+    if([self.trackView respondsToSelector:theSelector]){
+        [self.trackView performSelector:theSelector withObject:self];
     }
-    if([((NSObject*)self.backgroundView) respondsToSelector:theSelector]){
-        [((NSObject*)self.backgroundView) performSelector:theSelector withObject:self];
+    if([self.backgroundView respondsToSelector:theSelector]){
+        [self.backgroundView performSelector:theSelector withObject:self];
     }
     #pragma clang diagnostic pop
 }
