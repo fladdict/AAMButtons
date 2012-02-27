@@ -28,7 +28,7 @@
 }
 
 -(id)initWithTrackView:(UIView*)theTrack ThumbView:(UIView*)theThumb backgroundView:(UIView*)theBackground{
-    self = [super initWithFrame:theTrack.bounds];
+    self = [super initWithFrame:theBackground.bounds];
     if(self){
         isDragging = NO;
         isLocked = YES;
@@ -36,6 +36,7 @@
         [self addSubview:theBackground];
         [self addSubview:theTrack];
         [self addSubview:theThumb];
+        
         theTrack.userInteractionEnabled = NO;
         theThumb.userInteractionEnabled = NO;
         theBackground.userInteractionEnabled = NO;
