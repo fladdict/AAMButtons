@@ -27,6 +27,7 @@
 		3D9753CE14F9451000C7338D /* SlideLock_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9753C714F9451000C7338D /* SlideLock_thumb@2x.png */; };
 		3D9753CF14F9451000C7338D /* SlideLock_track.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9753C814F9451000C7338D /* SlideLock_track.png */; };
 		3D9753D014F9451000C7338D /* SlideLock_track@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9753C914F9451000C7338D /* SlideLock_track@2x.png */; };
+		3D9753E214F95F9400C7338D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9753E114F95F9400C7338D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		3D9753C714F9451000C7338D /* SlideLock_thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SlideLock_thumb@2x.png"; sourceTree = "<group>"; };
 		3D9753C814F9451000C7338D /* SlideLock_track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SlideLock_track.png; sourceTree = "<group>"; };
 		3D9753C914F9451000C7338D /* SlideLock_track@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SlideLock_track@2x.png"; sourceTree = "<group>"; };
+		3D9753E114F95F9400C7338D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9753E214F95F9400C7338D /* QuartzCore.framework in Frameworks */,
 				3D97538B14F944D300C7338D /* UIKit.framework in Frameworks */,
 				3D97538D14F944D300C7338D /* Foundation.framework in Frameworks */,
 				3D97538F14F944D300C7338D /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +118,7 @@
 		3D97538914F944D300C7338D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D9753E114F95F9400C7338D /* QuartzCore.framework */,
 				3D97538A14F944D300C7338D /* UIKit.framework */,
 				3D97538C14F944D300C7338D /* Foundation.framework */,
 				3D97538E14F944D300C7338D /* CoreGraphics.framework */,

@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 
-
 @implementation ViewController
 
 -(void)setPoisition:(CGPoint)thePoint forView:(UIView*)theView
@@ -18,12 +17,16 @@
     theView.frame = r;
 }
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self initSlideLock];
 }
+
+
 
 -(void)initSlideLock
 {
@@ -36,7 +39,7 @@
     AAMSlideLock *slideLock = [[AAMSlideLock alloc]initWithTrackView:track ThumbView:thumb backgroundView:background];
     slideLock.delegate = self;
     [self.view addSubview:slideLock];
-    [self setPoisition:CGPointMake(0, 480-95) forView:slideLock];
+    [self setPoisition:CGPointMake(0, 470-95) forView:slideLock];
 }
 
 -(void)slideLockDidSlideComplete:(AAMSlideLock*)theSlideLock
@@ -57,7 +60,7 @@
          theSlideLock.isLocked = YES;
          [UIView animateWithDuration:1 delay:1 options:UIViewAnimationOptionCurveEaseInOut animations:
           ^{
-              [self setPoisition:CGPointMake(0, 480-95) forView:theSlideLock];
+              [self setPoisition:CGPointMake(0, 470-95) forView:theSlideLock];
           } completion:
           ^(BOOL finished){
               theSlideLock.userInteractionEnabled = YES;

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AAMSlideLock.h"
 
+
 @interface ViewController : UIViewController <AAMSlideLockDelegate>
 
 -(void)initSlideLock;
